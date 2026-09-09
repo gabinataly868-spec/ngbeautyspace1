@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Agenda de Beleza | Cílios & Sobrancelhas</title>
+  <meta name="description" content="Agende seu horário para sobrancelhas e cílios.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="blob blob1"></div><div class="blob blob2"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">BELEZA & CUIDADO</p>
+      <h1>TABELA</h1>
+      <div class="script">de serviços</div>
+      <p class="subtitle">Cílios • Sobrancelhas • Agendamento online</p>
+      <a class="btn primary" href="#agendar">Agendar horário</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section prices">
+      <h2>Sobrancelhas</h2>
+      <div class="service-grid">
+        <article class="service"><div><b>Design de sobrancelha simples</b><small>30 min</small></div><strong>R$ 25,00</strong></article>
+        <article class="service"><div><b>Design de sobrancelha com henna</b><small>45 min</small></div><strong>R$ 35,00</strong></article>
+        <article class="service"><div><b>Design de sobrancelha com tintura</b><small>45 min</small></div><strong>R$ 40,00</strong></article>
+        <article class="service"><div><b>Brow lamination + Design</b><small>1h 15min</small></div><strong>R$ 100,00</strong></article>
+        <article class="service"><div><b>Brow lamination + Design + Henna</b><small>1h 30min</small></div><strong>R$ 110,00</strong></article>
+        <article class="service"><div><b>Brow Lamination + Design + Tintura</b><small>1h 30min</small></div><strong>R$ 130,00</strong></article>
+      </div>
+    </section>
+
+    <section class="section prices">
+      <h2>Cílios</h2>
+      <div class="service-grid">
+        <article class="service"><div><b>Alongamento Cílios Volume Brasileiro</b><small>2h</small></div><strong>R$ 65,00</strong></article>
+        <article class="service"><div><b>Alongamento Cílios Volume Egípcio</b><small>2h</small></div><strong>R$ 65,00</strong></article>
+        <article class="service"><div><b>Manutenção (até 21 dias pós aplicação)</b><small>1h 15min</small></div><strong>R$ 40,00</strong></article>
+        <article class="service"><div><b>Lash Lifting</b><small>1h 15min</small></div><strong>R$ 100,00</strong></article>
+        <article class="service"><div><b>Lash Lifting + Tintura</b><small>1h 30min</small></div><strong>R$ 120,00</strong></article>
+        <article class="service"><div><b>Remoção</b><small>30 min</small></div><strong>R$ 30,00</strong></article>
+      </div>
+    </section>
+
+    <section id="agendar" class="section booking">
+      <div class="booking-head">
+        <p class="eyebrow">RESERVE SEU MOMENTO</p>
+        <h2>Agende seu horário</h2>
+        <p>Atendimento de <b>segunda a sábado</b>.</p>
+      </div>
+
+      <form id="bookingForm">
+        <label>Procedimento
+          <select id="service" required>
+            <option value="">Selecione um serviço</option>
+          </select>
+        </label>
+        <div class="two">
+          <label>Data
+            <input type="date" id="date" required>
+          </label>
+          <label>Horário
+            <select id="time" required disabled><option value="">Escolha a data</option></select>
+          </label>
+        </div>
+        <label>Seu nome
+          <input type="text" id="name" placeholder="Digite seu nome" required maxlength="80">
+        </label>
+        <label>WhatsApp
+          <input type="tel" id="phone" placeholder="(31) 99999-9999" required maxlength="20">
+        </label>
+        <button class="btn primary wide" type="submit">Confirmar agendamento</button>
+        <p class="form-note">O horário será enviado para confirmação. Não agendamos aos domingos.</p>
+      </form>
+      <div id="result" class="result hidden"></div>
+    </section>
+
+    <section class="section info">
+      <div><span>HORÁRIO</span><b>Segunda a sábado</b></div>
+      <div><span>PAGAMENTO</span><b>Cartão de crédito, débito e Pix</b></div>
+    </section>
+  </main>
+
+  <a class="whatsapp" id="whatsapp" href="#" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <span>◉</span> WhatsApp
+  </a>
+
+  <footer>Feito para facilitar seu agendamento ♡</footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+:root{
+  --cream:#fbf8ef; --cream2:#f5eee3; --rose:#a86f72; --rose2:#c89595;
+  --line:#d8b9b4; --text:#7e5d5d; --dark:#684a4b; --white:#fffdf8;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:Montserrat,Arial,sans-serif}
+.hero{min-height:540px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:var(--cream)}
+.hero-inner{position:relative;z-index:2;padding:60px 20px 45px}
+.eyebrow{font-size:11px;letter-spacing:4px;color:var(--rose2);font-weight:600;margin:0 0 18px}
+h1,h2{font-family:"Cormorant Garamond",serif;color:var(--rose);font-weight:600}
+h1{font-size:82px;line-height:.8;letter-spacing:2px;margin:0}
+.script{font-family:Parisienne,cursive;font-size:64px;color:var(--rose2);line-height:1.1;margin:5px 0 20px}
+.subtitle{font-size:12px;letter-spacing:1.2px;margin:0 auto 28px}
+.blob{position:absolute;border:2px solid #d1b9a9;border-radius:45% 55% 58% 42%/55% 43% 57% 45%;opacity:.85}
+.blob1{width:230px;height:170px;left:-65px;top:35px;transform:rotate(-24deg)}
+.blob2{width:250px;height:180px;right:-75px;top:30px;transform:rotate(25deg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;text-decoration:none;cursor:pointer;border-radius:28px;padding:15px 28px;font:600 12px Montserrat;letter-spacing:.5px;transition:.2s}
+.btn.primary{background:var(--rose);color:#fff;box-shadow:0 10px 25px #a86f7228}.btn:hover{transform:translateY(-2px)}
+.section{max-width:850px;margin:auto;padding:55px 22px}
+h2{text-align:center;font-size:43px;margin:0 0 28px}
+.service-grid{border:1px solid var(--line);background:#fffdf855}
+.service{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:13px 16px;border-bottom:1px solid var(--line)}
+.service:last-child{border-bottom:0}.service b{display:block;font-weight:500;font-size:14px}.service small{display:block;font-size:10px;opacity:.65;margin-top:5px}
+.service strong{white-space:nowrap;font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--dark)}
+.booking{background:var(--cream2);max-width:none;padding-left:max(22px,calc((100% - 600px)/2));padding-right:max(22px,calc((100% - 600px)/2))}
+.booking-head{text-align:center;margin-bottom:25px}.booking-head h2{margin-bottom:7px}.booking-head p:last-child{font-size:12px}
+form{background:var(--white);padding:28px;border:1px solid var(--line);box-shadow:0 12px 40px #7e5d5d12}
+label{display:block;font-size:11px;font-weight:600;letter-spacing:.5px;margin-bottom:16px}
+input,select{width:100%;margin-top:8px;border:1px solid var(--line);background:#fff;padding:13px;border-radius:10px;color:var(--dark);font:14px Montserrat;outline:none}
+input:focus,select:focus{border-color:var(--rose)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}.wide{width:100%;margin-top:5px}.form-note{text-align:center;font-size:10px;opacity:.7;margin:14px 0 0}
+.result{margin-top:18px;background:#fffdf8;border:1px solid var(--line);padding:20px;text-align:center;font-size:13px;line-height:1.7}
+.result h3{font-family:"Cormorant Garamond";font-size:26px;color:var(--rose);margin:0}.hidden{display:none}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:20px;text-align:center}.info div{padding:20px}.info span{display:block;font-size:10px;letter-spacing:2px;color:var(--rose2);margin-bottom:7px}.info b{font-size:12px}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#4f9b70;color:white;text-decoration:none;border-radius:30px;padding:13px 18px;font-size:12px;font-weight:600;box-shadow:0 8px 24px #0002;z-index:10}
+.whatsapp span{margin-right:7px}footer{text-align:center;padding:25px;font-size:10px;opacity:.55}
+@media(max-width:600px){.hero{min-height:480px}.hero-inner{padding-top:50px}h1{font-size:66px}.script{font-size:53px}.service b{font-size:12px}.service strong{font-size:18px}.two{grid-template-columns:1fr}.info{grid-template-columns:1fr}.section{padding-top:42px;padding-bottom:42px}}
