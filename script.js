@@ -38,7 +38,6 @@ services.forEach(function(service, index) {
 function money(value) {
   return "R$ " + Number(value).toFixed(2).replace(".", ",");
 }
-
 function dayAllowed(date) {
   const day = new Date(date + "T12:00:00").getDay();
   return day >= 1 && day <= 6;
