@@ -5,7 +5,7 @@
      podem ser enviados pelo WhatsApp.
 */
 const CONFIG = {
-  APPS_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbwyBrrAbDILpi0ZzBSQm7KZOCk2HNo4nWaIXoBb2P2UmfrYJfH4A935ops3tRM8D6TpaQ/exec",
+  APPS_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbwkEWkD0ZEy5wkQId8MV2S7WXtYBqKiO-3mIbEvheWq0Q4JdYNRe8xHrPLHlttRGELEZw/exec",
   WHATSAPP: "5531992148272",
   OPENING_HOUR: 8,
   CLOSING_HOUR: 18,
